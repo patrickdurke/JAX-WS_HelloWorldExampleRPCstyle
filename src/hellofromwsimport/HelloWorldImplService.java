@@ -65,6 +65,8 @@ public class HelloWorldImplService
      */
     @WebEndpoint(name = "HelloWorldImplPort")
     public HelloWorld getHelloWorldImplPort() {
+        // Note om hvordan metoden er autogenereret fra wsdl-filen:
+        // https://prnt.sc/utydg7
         return super.getPort(new QName("http://hello/", "HelloWorldImplPort"), HelloWorld.class);
     }
 
