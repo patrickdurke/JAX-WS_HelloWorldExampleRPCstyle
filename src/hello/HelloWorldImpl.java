@@ -11,4 +11,17 @@ public class HelloWorldImpl implements HelloWorld{
         return "Hello World JAX-WS " + name;
     }
 
+    @Override
+    public int getHelloWorldAsNumber(int number) {
+        return 1000 + number;
+    }
+
+    @Override
+    public String[] getArrayOfHelloWorldStrings(String[] names) {
+        for (String name : names) {
+            name = "hello " + name;
+        }
+        return names;
+    }
+
 }

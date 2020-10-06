@@ -20,6 +20,19 @@ public class HelloWorldClient{
 
         System.out.println(hello.getHelloWorldAsString("mkyong"));
 
+        //Eksperimenter med forskellige parametertyper og returtyper:
+        System.out.println(hello.getHelloWorldAsNumber(42));
+
+        String[] strings = new String[5];
+        for (int i = 0; i < strings.length; i++) {
+            strings[i] = "Person" + i;
+        }
+
+        strings = hello.getArrayOfHelloWorldStrings(strings);
+
+        for (String string: strings) {
+            System.out.println(string);
+        }
     }
 
 }

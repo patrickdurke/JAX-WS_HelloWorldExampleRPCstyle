@@ -14,3 +14,7 @@ og vedr. -s:
 -s directory
     Specifies where to place generated source files.
 jf: https://docs.oracle.com/javase/9/tools/wsimport.htm
+
+##Opgave
+JAX-WS hello world
+    Få hello world eksemplerne fra tutorialen til at virke på din computer. Eksperimenter med forskellige parametertyper og returtyper.
